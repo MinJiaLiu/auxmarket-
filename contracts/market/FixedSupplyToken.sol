@@ -102,6 +102,7 @@ contract Owned {
 contract FixedSupplyToken is ERC20Interface, Owned {
     using SafeMath for uint;
 
+
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -109,6 +110,7 @@ contract FixedSupplyToken is ERC20Interface, Owned {
 
     mapping(address => uint) balances;
     mapping(address => mapping(address => uint)) allowed;
+    mapping (address => uint256) public zapWei_spent; //amount of zap that a msg.sender has spent in buying Token
 
 
     // ------------------------------------------------------------------------
@@ -150,6 +152,11 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     // - 0 value transfers are allowed
     // ------------------------------------------------------------------------
     function transfer(address to, uint tokens) public returns (bool success) {
+
+
+        uint256 transferedzap = (tokens.mul(zapWei_spent[msg.sender])).div(balanceOf(msg.sender));
+        zapWei_spent[to] = zapWei_spent[to].add(transferedzap);
+        zapWei_spent[msg.sender]= zapWei_spent[msg.sender].sub(transferedzap);
         balances[msg.sender] = balances[msg.sender].sub(tokens);
         balances[to] = balances[to].add(tokens);
         emit Transfer(msg.sender, to, tokens);
@@ -182,7 +189,12 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     // - 0 value transfers are allowed
     // ------------------------------------------------------------------------
     function transferFrom(address from, address to, uint tokens) public returns (bool success) {
+
+        uint256 transferedzap = (tokens.mul(zapWei_spent[msg.sender])).div(balanceOf(msg.sender));
+        zapWei_spent[to] = zapWei_spent[to].add(transferedzap);
+        zapWei_spent[from]= zapWei_spent[from].sub(transferedzap);
         balances[from] = balances[from].sub(tokens);
+
         allowed[from][msg.sender] = allowed[from][msg.sender].sub(tokens);
         balances[to] = balances[to].add(tokens);
         emit Transfer(from, to, tokens);
