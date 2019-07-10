@@ -1,6 +1,6 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
 
-import "./Token.sol";
+/* import "./Token.sol";
 import "./TokenFactoryInterface.sol";
 
 contract TokenFactory is TokenFactoryInterface {
@@ -13,4 +13,4 @@ contract TokenFactory is TokenFactoryInterface {
         token.transferOwnership(msg.sender);
         return token;
     }
-}
+} */

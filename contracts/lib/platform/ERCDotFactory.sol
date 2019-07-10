@@ -1,4 +1,5 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
+/* pragma solidity ^0.4.24;
 
 import "../token/TokenFactoryInterface.sol";
 import "../token/FactoryTokenInterface.sol";
@@ -81,4 +82,4 @@ contract ERCDotFactory is Ownable {
 
         return string(bytesString);
     }
-}
+} */

@@ -1,11 +1,12 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
+/* pragma solidity ^0.4.24;
 
 import "./EthAdapter.sol";
 import "./TokenAdapter.sol";
 
 //send eth to obtain market token
 //use market token to bond to gated markets
-//child contracts can control gate unbonding 
+//child contracts can control gate unbonding
 
 contract EthGatedMarket is EthAdapter {
 
@@ -101,4 +102,4 @@ contract EthGatedMarket is EthAdapter {
     function allowUnbond(bool _allow) onlyOwner {
         unbondAllow = _allow;
     }
-}
+} */

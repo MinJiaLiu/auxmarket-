@@ -1,4 +1,5 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
+/* pragma solidity ^0.4.24;
 
 import "../../platform/bondage/currentCost/CurrentCostInterface.sol";
 import "./ERCDotFactory.sol";
@@ -74,4 +75,4 @@ contract EthAdapter is ERCDotFactory {
         uint reserveAmount = bondage.calcZapForDots(address(this), specifier, quantity);
         return reserveAmount * adapterRate;
     }
-}
+} */

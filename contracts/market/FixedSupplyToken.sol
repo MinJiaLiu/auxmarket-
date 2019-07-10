@@ -1,4 +1,5 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.4.24;
+import "../token/ZapToken.sol";
 
 // ----------------------------------------------------------------------------
 // 'FIXED' 'Example Fixed Supply Token' token contract
@@ -17,7 +18,7 @@ pragma solidity ^0.5.0;
 // ----------------------------------------------------------------------------
 // Safe maths
 // ----------------------------------------------------------------------------
-library SafeMath {
+/* library SafeMath {
     function add(uint a, uint b) internal pure returns (uint c) {
         c = a + b;
         require(c >= a);
@@ -34,7 +35,7 @@ library SafeMath {
         require(b > 0);
         c = a / b;
     }
-}
+} */
 
 
 // ----------------------------------------------------------------------------
