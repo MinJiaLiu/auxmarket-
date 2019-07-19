@@ -35,8 +35,8 @@
     "ethjs": "^0.4.0",
     "ganache-cli": "^6.2.5",
     "truffle": "^4.1.11",
-    "truffle-hdwallet-provider": "0.0.5",
-    "truffle-hdwallet-provider-privkey": "^0.2.0",
+    "truffle-hdwallet-provider": "^1.0.6",
+    "truffle-hdwallet-provider-privkey": "^1.0.0",
     "uuid-parse": "^1.0.0",
     "web3-utils": "^1.0.0-beta.34"
   },

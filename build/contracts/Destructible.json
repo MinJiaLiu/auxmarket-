@@ -56,14 +56,14 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610348806100536000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638da5cb5b1461005c5780639cb8a26a146100b3578063f2fde38b146100ca575b600080fd5b34801561006857600080fd5b5061007161010d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610132565b005b3480156100d657600080fd5b5061010b600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101c7565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561018d57600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561022257600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561025e57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820cec1ab548db4e2ce0cb60950de552e9e5b6403c12c2444301bcc745bdfe112060029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638da5cb5b1461005c5780639cb8a26a146100b3578063f2fde38b146100ca575b600080fd5b34801561006857600080fd5b5061007161010d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610132565b005b3480156100d657600080fd5b5061010b600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101c7565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561018d57600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561022257600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561025e57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820cec1ab548db4e2ce0cb60950de552e9e5b6403c12c2444301bcc745bdfe112060029",
-  "sourceMap": "62:118:2:-;;;297:10:3;289:5;;:18;;;;;;;;;;;;;;;;;;62:118:2;;;;;;",
-  "deployedSourceMap": "62:118:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;49:20:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;49:20:3;;;;;;;;;;;;;;;;;;;;;;;;;;;101:77:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;101:77:2;;;;;;632:188:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;632:188:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;49:20;;;;;;;;;;;;;:::o;101:77:2:-;451:5:3;;;;;;;;;;;437:19;;:10;:19;;;429:28;;;;;;;;165:5:2;;;;;;;;;;;152:19;;;632:188:3;451:5;;;;;;;;;;;437:19;;:10;:19;;;429:28;;;;;;;;732:1;712:22;;:8;:22;;;;704:31;;;;;;;;778:8;750:37;;771:5;;;;;;;;;;;750:37;;;;;;;;;;;;805:8;797:5;;:16;;;;;;;;;;;;;;;;;;632:188;:::o",
-  "source": "pragma solidity ^0.4.24;\n\nimport \"../ownership/Ownable.sol\";\n\ncontract Destructible is Ownable {\n    function selfDestruct() public onlyOwner {\n        selfdestruct(owner);\n    }\n}\n",
-  "sourcePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/lifecycle/Destructible.sol",
+  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610348806100536000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638da5cb5b1461005c5780639cb8a26a146100b3578063f2fde38b146100ca575b600080fd5b34801561006857600080fd5b5061007161010d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610132565b005b3480156100d657600080fd5b5061010b600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101c7565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561018d57600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561022257600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561025e57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820449a8484f37f0a3382d46473939de9fbbd15bb84c1f16f1c2ae8f07b906b4f990029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638da5cb5b1461005c5780639cb8a26a146100b3578063f2fde38b146100ca575b600080fd5b34801561006857600080fd5b5061007161010d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100bf57600080fd5b506100c8610132565b005b3480156100d657600080fd5b5061010b600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101c7565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561018d57600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561022257600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561025e57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820449a8484f37f0a3382d46473939de9fbbd15bb84c1f16f1c2ae8f07b906b4f990029",
+  "sourceMap": "66:122:2:-;;;304:10:3;296:5;;:18;;;;;;;;;;;;;;;;;;66:122:2;;;;;;",
+  "deployedSourceMap": "66:122:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;52:20:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;52:20:3;;;;;;;;;;;;;;;;;;;;;;;;;;;106:79:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;106:79:2;;;;;;649:192:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;649:192:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;52:20;;;;;;;;;;;;;:::o;106:79:2:-;462:5:3;;;;;;;;;;;448:19;;:10;:19;;;440:28;;;;;;;;171:5:2;;;;;;;;;;;158:19;;;649:192:3;462:5;;;;;;;;;;;448:19;;:10;:19;;;440:28;;;;;;;;750:1;730:22;;:8;:22;;;;722:31;;;;;;;;797:8;769:37;;790:5;;;;;;;;;;;769:37;;;;;;;;;;;;825:8;817:5;;:16;;;;;;;;;;;;;;;;;;649:192;:::o",
+  "source": "pragma solidity ^0.4.24;\r\n\r\nimport \"../ownership/Ownable.sol\";\r\n\r\ncontract Destructible is Ownable {\r\n    function selfDestruct() public onlyOwner {\r\n        selfdestruct(owner);\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Users\\min\\auxmarket-\\contracts\\lib\\lifecycle\\Destructible.sol",
   "ast": {
-    "absolutePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/lifecycle/Destructible.sol",
+    "absolutePath": "/C/Users/min/auxmarket-/contracts/lib/lifecycle/Destructible.sol",
     "exportedSymbols": {
       "Destructible": [
         147
@@ -84,13 +84,13 @@
         "src": "0:24:2"
       },
       {
-        "absolutePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/ownership/Ownable.sol",
+        "absolutePath": "/C/Users/min/auxmarket-/contracts/lib/ownership/Ownable.sol",
         "file": "../ownership/Ownable.sol",
         "id": 134,
         "nodeType": "ImportDirective",
         "scope": 148,
         "sourceUnit": 204,
-        "src": "26:34:2",
+        "src": "28:34:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -104,7 +104,7 @@
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 203,
-              "src": "87:7:2",
+              "src": "91:7:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_Ownable_$203",
                 "typeString": "contract Ownable"
@@ -112,7 +112,7 @@
             },
             "id": 136,
             "nodeType": "InheritanceSpecifier",
-            "src": "87:7:2"
+            "src": "91:7:2"
           }
         ],
         "contractDependencies": [
@@ -133,7 +133,7 @@
             "body": {
               "id": 145,
               "nodeType": "Block",
-              "src": "142:36:2",
+              "src": "147:38:2",
               "statements": [
                 {
                   "expression": {
@@ -146,7 +146,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 151,
-                        "src": "165:5:2",
+                        "src": "171:5:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -164,8 +164,8 @@
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10199,
-                      "src": "152:12:2",
+                      "referencedDeclaration": 4615,
+                      "src": "158:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
@@ -179,7 +179,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "152:19:2",
+                    "src": "158:19:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -187,7 +187,7 @@
                   },
                   "id": 144,
                   "nodeType": "ExpressionStatement",
-                  "src": "152:19:2"
+                  "src": "158:19:2"
                 }
               ]
             },
@@ -207,14 +207,14 @@
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 177,
-                  "src": "132:9:2",
+                  "src": "137:9:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "132:9:2"
+                "src": "137:9:2"
               }
             ],
             "name": "selfDestruct",
@@ -223,30 +223,30 @@
               "id": 137,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "122:2:2"
+              "src": "127:2:2"
             },
             "payable": false,
             "returnParameters": {
               "id": 140,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "142:0:2"
+              "src": "147:0:2"
             },
             "scope": 147,
-            "src": "101:77:2",
+            "src": "106:79:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 148,
-        "src": "62:118:2"
+        "src": "66:122:2"
       }
     ],
-    "src": "0:181:2"
+    "src": "0:190:2"
   },
   "legacyAST": {
-    "absolutePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/lifecycle/Destructible.sol",
+    "absolutePath": "/C/Users/min/auxmarket-/contracts/lib/lifecycle/Destructible.sol",
     "exportedSymbols": {
       "Destructible": [
         147
@@ -267,13 +267,13 @@
         "src": "0:24:2"
       },
       {
-        "absolutePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/ownership/Ownable.sol",
+        "absolutePath": "/C/Users/min/auxmarket-/contracts/lib/ownership/Ownable.sol",
         "file": "../ownership/Ownable.sol",
         "id": 134,
         "nodeType": "ImportDirective",
         "scope": 148,
         "sourceUnit": 204,
-        "src": "26:34:2",
+        "src": "28:34:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -287,7 +287,7 @@
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 203,
-              "src": "87:7:2",
+              "src": "91:7:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_Ownable_$203",
                 "typeString": "contract Ownable"
@@ -295,7 +295,7 @@
             },
             "id": 136,
             "nodeType": "InheritanceSpecifier",
-            "src": "87:7:2"
+            "src": "91:7:2"
           }
         ],
         "contractDependencies": [
@@ -316,7 +316,7 @@
             "body": {
               "id": 145,
               "nodeType": "Block",
-              "src": "142:36:2",
+              "src": "147:38:2",
               "statements": [
                 {
                   "expression": {
@@ -329,7 +329,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 151,
-                        "src": "165:5:2",
+                        "src": "171:5:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -347,8 +347,8 @@
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10199,
-                      "src": "152:12:2",
+                      "referencedDeclaration": 4615,
+                      "src": "158:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
@@ -362,7 +362,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "152:19:2",
+                    "src": "158:19:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -370,7 +370,7 @@
                   },
                   "id": 144,
                   "nodeType": "ExpressionStatement",
-                  "src": "152:19:2"
+                  "src": "158:19:2"
                 }
               ]
             },
@@ -390,14 +390,14 @@
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 177,
-                  "src": "132:9:2",
+                  "src": "137:9:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "132:9:2"
+                "src": "137:9:2"
               }
             ],
             "name": "selfDestruct",
@@ -406,27 +406,27 @@
               "id": 137,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "122:2:2"
+              "src": "127:2:2"
             },
             "payable": false,
             "returnParameters": {
               "id": 140,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "142:0:2"
+              "src": "147:0:2"
             },
             "scope": 147,
-            "src": "101:77:2",
+            "src": "106:79:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 148,
-        "src": "62:118:2"
+        "src": "66:122:2"
       }
     ],
-    "src": "0:181:2"
+    "src": "0:190:2"
   },
   "compiler": {
     "name": "solc",
@@ -434,5 +434,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.2",
-  "updatedAt": "2019-07-12T18:45:47.862Z"
+  "updatedAt": "2019-07-15T20:22:45.743Z"
 }

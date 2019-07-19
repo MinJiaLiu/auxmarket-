@@ -29,10 +29,10 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.4.25;\n\nimport \"./FactoryTokenInterface.sol\";\n\ncontract TokenFactoryInterface {\n    function create(string _name, string _symbol) public returns (FactoryTokenInterface);\n}\n",
-  "sourcePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/token/TokenFactoryInterface.sol",
+  "source": "pragma solidity ^0.4.25;\r\n\r\nimport \"./FactoryTokenInterface.sol\";\r\n\r\ncontract TokenFactoryInterface {\r\n    function create(string _name, string _symbol) public returns (FactoryTokenInterface);\r\n}\r\n",
+  "sourcePath": "C:\\Users\\min\\auxmarket-\\contracts\\lib\\token\\TokenFactoryInterface.sol",
   "ast": {
-    "absolutePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/token/TokenFactoryInterface.sol",
+    "absolutePath": "/C/Users/min/auxmarket-/contracts/lib/token/TokenFactoryInterface.sol",
     "exportedSymbols": {
       "TokenFactoryInterface": [
         3163
@@ -53,13 +53,13 @@
         "src": "0:24:21"
       },
       {
-        "absolutePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/token/FactoryTokenInterface.sol",
+        "absolutePath": "/C/Users/min/auxmarket-/contracts/lib/token/FactoryTokenInterface.sol",
         "file": "./FactoryTokenInterface.sol",
         "id": 3153,
         "nodeType": "ImportDirective",
         "scope": 3164,
         "sourceUnit": 2430,
-        "src": "26:37:21",
+        "src": "28:37:21",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -96,7 +96,7 @@
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
                   "scope": 3162,
-                  "src": "118:12:21",
+                  "src": "123:12:21",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -107,7 +107,7 @@
                     "id": 3154,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "118:6:21",
+                    "src": "123:6:21",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -122,7 +122,7 @@
                   "name": "_symbol",
                   "nodeType": "VariableDeclaration",
                   "scope": 3162,
-                  "src": "132:14:21",
+                  "src": "137:14:21",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -133,7 +133,7 @@
                     "id": 3156,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "132:6:21",
+                    "src": "137:6:21",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -143,7 +143,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "117:30:21"
+              "src": "122:30:21"
             },
             "payable": false,
             "returnParameters": {
@@ -156,7 +156,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 3162,
-                  "src": "164:21:21",
+                  "src": "169:21:21",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -169,7 +169,7 @@
                     "name": "FactoryTokenInterface",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 2429,
-                    "src": "164:21:21",
+                    "src": "169:21:21",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_FactoryTokenInterface_$2429",
                       "typeString": "contract FactoryTokenInterface"
@@ -179,23 +179,23 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "163:23:21"
+              "src": "168:23:21"
             },
             "scope": 3163,
-            "src": "102:85:21",
+            "src": "107:85:21",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 3164,
-        "src": "65:124:21"
+        "src": "69:126:21"
       }
     ],
-    "src": "0:190:21"
+    "src": "0:197:21"
   },
   "legacyAST": {
-    "absolutePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/token/TokenFactoryInterface.sol",
+    "absolutePath": "/C/Users/min/auxmarket-/contracts/lib/token/TokenFactoryInterface.sol",
     "exportedSymbols": {
       "TokenFactoryInterface": [
         3163
@@ -216,13 +216,13 @@
         "src": "0:24:21"
       },
       {
-        "absolutePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/token/FactoryTokenInterface.sol",
+        "absolutePath": "/C/Users/min/auxmarket-/contracts/lib/token/FactoryTokenInterface.sol",
         "file": "./FactoryTokenInterface.sol",
         "id": 3153,
         "nodeType": "ImportDirective",
         "scope": 3164,
         "sourceUnit": 2430,
-        "src": "26:37:21",
+        "src": "28:37:21",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -259,7 +259,7 @@
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
                   "scope": 3162,
-                  "src": "118:12:21",
+                  "src": "123:12:21",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -270,7 +270,7 @@
                     "id": 3154,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "118:6:21",
+                    "src": "123:6:21",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -285,7 +285,7 @@
                   "name": "_symbol",
                   "nodeType": "VariableDeclaration",
                   "scope": 3162,
-                  "src": "132:14:21",
+                  "src": "137:14:21",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -296,7 +296,7 @@
                     "id": 3156,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "132:6:21",
+                    "src": "137:6:21",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -306,7 +306,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "117:30:21"
+              "src": "122:30:21"
             },
             "payable": false,
             "returnParameters": {
@@ -319,7 +319,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 3162,
-                  "src": "164:21:21",
+                  "src": "169:21:21",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -332,7 +332,7 @@
                     "name": "FactoryTokenInterface",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 2429,
-                    "src": "164:21:21",
+                    "src": "169:21:21",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_FactoryTokenInterface_$2429",
                       "typeString": "contract FactoryTokenInterface"
@@ -342,20 +342,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "163:23:21"
+              "src": "168:23:21"
             },
             "scope": 3163,
-            "src": "102:85:21",
+            "src": "107:85:21",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 3164,
-        "src": "65:124:21"
+        "src": "69:126:21"
       }
     ],
-    "src": "0:190:21"
+    "src": "0:197:21"
   },
   "compiler": {
     "name": "solc",
@@ -363,5 +363,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.2",
-  "updatedAt": "2019-07-12T18:45:47.861Z"
+  "updatedAt": "2019-07-12T21:27:32.106Z"
 }

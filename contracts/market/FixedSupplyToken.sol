@@ -107,6 +107,7 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     string public  name;
     uint8 public decimals;
     uint _totalSupply;
+    address public auxmarket;
 
     mapping(address => uint) balances;
     mapping(address => mapping(address => uint)) allowed;
@@ -116,7 +117,8 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    constructor() public {
+    constructor(address auxmarketdeployed) public {
+
         symbol = "BCT";
         name = "Auxiliary Market BitCoin Token";
         decimals = 18;
@@ -153,7 +155,7 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     // ------------------------------------------------------------------------
     function transfer(address to, uint tokens) public returns (bool success) {
 
-
+        require(_to != address(0));
         uint256 transferedzap = (tokens.mul(zapWei_spent[msg.sender])).div(balanceOf(msg.sender));
         zapWei_spent[to] = zapWei_spent[to].add(transferedzap);
         zapWei_spent[msg.sender]= zapWei_spent[msg.sender].sub(transferedzap);
@@ -189,7 +191,7 @@ contract FixedSupplyToken is ERC20Interface, Owned {
     // - 0 value transfers are allowed
     // ------------------------------------------------------------------------
     function transferFrom(address from, address to, uint tokens) public returns (bool success) {
-
+        require(_to != address(0));
         uint256 transferedzap = (tokens.mul(zapWei_spent[msg.sender])).div(balanceOf(msg.sender));
         zapWei_spent[to] = zapWei_spent[to].add(transferedzap);
         zapWei_spent[from]= zapWei_spent[from].sub(transferedzap);

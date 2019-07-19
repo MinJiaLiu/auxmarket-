@@ -36,10 +36,10 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.4.24;\n\ncontract OnChainProvider {\n    /// @dev function for requesting data from on-chain provider\n    /// @param id request id\n    /// @param userQuery query string\n    /// @param endpoint endpoint specifier ala 'smart_contract'\n    /// @param endpointParams endpoint-specific params\n    function receive(uint256 id, string userQuery, bytes32 endpoint, bytes32[] endpointParams, bool onchainSubscriber) external;\n}\n",
-  "sourcePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/platform/OnChainProvider.sol",
+  "source": "pragma solidity ^0.4.24;\r\n\r\ncontract OnChainProvider {\r\n    /// @dev function for requesting data from on-chain provider\r\n    /// @param id request id\r\n    /// @param userQuery query string\r\n    /// @param endpoint endpoint specifier ala 'smart_contract'\r\n    /// @param endpointParams endpoint-specific params\r\n    function receive(uint256 id, string userQuery, bytes32 endpoint, bytes32[] endpointParams, bool onchainSubscriber) external;\r\n}\r\n",
+  "sourcePath": "C:\\Users\\min\\auxmarket-\\contracts\\lib\\platform\\OnChainProvider.sol",
   "ast": {
-    "absolutePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/platform/OnChainProvider.sol",
+    "absolutePath": "/C/Users/min/auxmarket-/contracts/lib/platform/OnChainProvider.sol",
     "exportedSymbols": {
       "OnChainProvider": [
         580
@@ -74,7 +74,7 @@
         "nodes": [
           {
             "body": null,
-            "documentation": "@dev function for requesting data from on-chain provider\n @param id request id\n @param userQuery query string\n @param endpoint endpoint specifier ala 'smart_contract'\n @param endpointParams endpoint-specific params",
+            "documentation": "@param endpointParams endpoint-specific params",
             "id": 579,
             "implemented": false,
             "isConstructor": false,
@@ -92,7 +92,7 @@
                   "name": "id",
                   "nodeType": "VariableDeclaration",
                   "scope": 579,
-                  "src": "325:10:11",
+                  "src": "333:10:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -103,7 +103,7 @@
                     "id": 566,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "325:7:11",
+                    "src": "333:7:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -118,7 +118,7 @@
                   "name": "userQuery",
                   "nodeType": "VariableDeclaration",
                   "scope": 579,
-                  "src": "337:16:11",
+                  "src": "345:16:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -129,7 +129,7 @@
                     "id": 568,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "337:6:11",
+                    "src": "345:6:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -144,7 +144,7 @@
                   "name": "endpoint",
                   "nodeType": "VariableDeclaration",
                   "scope": 579,
-                  "src": "355:16:11",
+                  "src": "363:16:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -155,7 +155,7 @@
                     "id": 570,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "355:7:11",
+                    "src": "363:7:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -170,7 +170,7 @@
                   "name": "endpointParams",
                   "nodeType": "VariableDeclaration",
                   "scope": 579,
-                  "src": "373:24:11",
+                  "src": "381:24:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -182,7 +182,7 @@
                       "id": 572,
                       "name": "bytes32",
                       "nodeType": "ElementaryTypeName",
-                      "src": "373:7:11",
+                      "src": "381:7:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -191,7 +191,7 @@
                     "id": 573,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "373:9:11",
+                    "src": "381:9:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
                       "typeString": "bytes32[]"
@@ -206,7 +206,7 @@
                   "name": "onchainSubscriber",
                   "nodeType": "VariableDeclaration",
                   "scope": 579,
-                  "src": "399:22:11",
+                  "src": "407:22:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -217,7 +217,7 @@
                     "id": 575,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "399:4:11",
+                    "src": "407:4:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -227,30 +227,30 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "324:98:11"
+              "src": "332:98:11"
             },
             "payable": false,
             "returnParameters": {
               "id": 578,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "431:0:11"
+              "src": "439:0:11"
             },
             "scope": 580,
-            "src": "308:124:11",
+            "src": "316:124:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
         "scope": 581,
-        "src": "26:408:11"
+        "src": "28:415:11"
       }
     ],
-    "src": "0:435:11"
+    "src": "0:445:11"
   },
   "legacyAST": {
-    "absolutePath": "/Users/samfarber/Desktop/auxmarket-/contracts/lib/platform/OnChainProvider.sol",
+    "absolutePath": "/C/Users/min/auxmarket-/contracts/lib/platform/OnChainProvider.sol",
     "exportedSymbols": {
       "OnChainProvider": [
         580
@@ -285,7 +285,7 @@
         "nodes": [
           {
             "body": null,
-            "documentation": "@dev function for requesting data from on-chain provider\n @param id request id\n @param userQuery query string\n @param endpoint endpoint specifier ala 'smart_contract'\n @param endpointParams endpoint-specific params",
+            "documentation": "@param endpointParams endpoint-specific params",
             "id": 579,
             "implemented": false,
             "isConstructor": false,
@@ -303,7 +303,7 @@
                   "name": "id",
                   "nodeType": "VariableDeclaration",
                   "scope": 579,
-                  "src": "325:10:11",
+                  "src": "333:10:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -314,7 +314,7 @@
                     "id": 566,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "325:7:11",
+                    "src": "333:7:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -329,7 +329,7 @@
                   "name": "userQuery",
                   "nodeType": "VariableDeclaration",
                   "scope": 579,
-                  "src": "337:16:11",
+                  "src": "345:16:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -340,7 +340,7 @@
                     "id": 568,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "337:6:11",
+                    "src": "345:6:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -355,7 +355,7 @@
                   "name": "endpoint",
                   "nodeType": "VariableDeclaration",
                   "scope": 579,
-                  "src": "355:16:11",
+                  "src": "363:16:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -366,7 +366,7 @@
                     "id": 570,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "355:7:11",
+                    "src": "363:7:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -381,7 +381,7 @@
                   "name": "endpointParams",
                   "nodeType": "VariableDeclaration",
                   "scope": 579,
-                  "src": "373:24:11",
+                  "src": "381:24:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -393,7 +393,7 @@
                       "id": 572,
                       "name": "bytes32",
                       "nodeType": "ElementaryTypeName",
-                      "src": "373:7:11",
+                      "src": "381:7:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -402,7 +402,7 @@
                     "id": 573,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "373:9:11",
+                    "src": "381:9:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
                       "typeString": "bytes32[]"
@@ -417,7 +417,7 @@
                   "name": "onchainSubscriber",
                   "nodeType": "VariableDeclaration",
                   "scope": 579,
-                  "src": "399:22:11",
+                  "src": "407:22:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -428,7 +428,7 @@
                     "id": 575,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "399:4:11",
+                    "src": "407:4:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -438,27 +438,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "324:98:11"
+              "src": "332:98:11"
             },
             "payable": false,
             "returnParameters": {
               "id": 578,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "431:0:11"
+              "src": "439:0:11"
             },
             "scope": 580,
-            "src": "308:124:11",
+            "src": "316:124:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
         "scope": 581,
-        "src": "26:408:11"
+        "src": "28:415:11"
       }
     ],
-    "src": "0:435:11"
+    "src": "0:445:11"
   },
   "compiler": {
     "name": "solc",
@@ -466,5 +466,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.2",
-  "updatedAt": "2019-07-12T18:45:47.849Z"
+  "updatedAt": "2019-07-15T20:22:45.741Z"
 }
